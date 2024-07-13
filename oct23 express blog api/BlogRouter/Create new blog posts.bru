@@ -1,0 +1,22 @@
+meta {
+  name: Create new blog posts
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/blogs
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "blog post to update",
+    "content": "Pretend this is 4000 words.", 
+    "author": "668cf2be86ed76d90bba15b5",
+    "headerImage": "https://placehold.co/600x400/EEE/31343C",
+    "tags": ["seeded", "tada!", "pokemon", "food"],
+    "categories": ["photography", "life"]
+  }
+}
